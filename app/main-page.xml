@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="My About Me App" icon="" />
+    <ScrollView>
+    <StackLayout class="p-4" class="mainPage"> <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/1200px-New_york_times_square-terabass.jpg" width="100%" height="auto" />
+    <Label text="Introduction" class="Header" />
+    <StackLayout>
+        <GridLayout rows="auto" columns="*,*">
+            <Label textWrap="true" text="Hello! I'm Alexandra Sterling, a small-town dreamer turned globetrotting storyteller. Born and raised in the charming New England town of Willowbrook, I fell in love with the natural world and adventure early on. Today, I'm a freelance journalist and travel writer based in New York City, capturing stories from the streets of NYC to the far corners of the globe. Join me on my adventures and let's explore the world together! 🌍📷📝" verticalAlignment="center" width="250" height="auto" row="0" col="0" class="text-column" />
+            <Image src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" width="auto" height="250" row="0" col="1" class="image-column" />
+        </GridLayout>
+
+            <Label textWrap="true" text="To learn more about me or contact me," class="Subheader" style="marginTop: 10" />
+            <Label textWrap="true" text="click one of the buttons below!" class="Subheader" />
+
+        <Button text="About Me" class="primary" tap="onAboutMeButtonTap" />
+        <Button text="Skills" class="primary" tap="onSkillsButtonTap" />
+        <Button text="Contact Me" class="primary" tap="onContactMeButtonTap" />
+
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
+</Page>
